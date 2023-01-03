@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-	<title>Ejemplo web api</title>
+	<title>Ejemplo Web API</title>
 	<meta charset="utf-8"  />
-<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
-<script src="codigo.js"></script>
-
+	<link rel=StyleSheet href="style.css" type="text/css" media=screen>
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/api.png">
+	<script src="codigo.js"></script>
 </head>
 
-<body >
- <h1>EJEMPLO WEB API</h1>
-     <p>AP18018 <br>Iris Elizabeth Arias Pérez <br>Guia 61b</p>
-	 <p><button onclick="obtenerProductos();this.style.display='none';">Obtener Productos</button></p>
-	 <div id="listado" style="display:none;">
-	 <form name="filtroprods" id="filtroprods">
-	   Seleccione Categorias <br>
-	   <input type="checkbox" id="c1" value="c1" checked>Electronicos<br>
-	 <input type="checkbox" id="c2" value="c2" checked>Joyería<br>
-   <input type="checkbox" id="c3" value="c3" checked>Ropa Caballero<br>
-   <input type="checkbox" id="c4" value="c4" checked>Ropa Dama<br>
-   <ol><li>Click en la imagen para Acercamiento</li>
-   <li>Click en precio para ordenar Asc o Desc</li></ol>
-     <table id="tabla" border="1">
-	 <thead>
-	 <tr><th>id</th><th>foto</th><th  id="price">price</th>
-	 <th>title</th><th>description</th><th>category</th></tr>
-	 </thead>
-	 <tbody id="tbody"></tbody>
-	 </table>
-	 </form>
-	 </div>
+<body>
+	<header>
+		<h2>EJEMPLO WEB API</h2>	
+		AP18018 | Iris Elizabeth Arias Pérez | Guia 61b	
+	</header>
 	
-     
+	<p>
+		<button onclick="obtenerProductos();this.style.display='none';">Obtener Productos
+		</button>
+	</p>
+
+	<div id="listado" style="display:none;">
+		<form name="filtroprods" id="filtroprods">
+			
+			Seleccione para filtrar por Categorias <br>
+				
+					<input type="checkbox" id="c1" value="c1" checked>Electronicos<br>
+					<input type="checkbox" id="c2" value="c2" checked>Joyería<br>
+					<input type="checkbox" id="c3" value="c3" checked>Ropa Caballero<br>
+					<input type="checkbox" id="c4" value="c4" checked>Ropa Dama<br>
+			
+			
+			<ol>
+				<li>Click en la imagen para abrir la vista original</li>
+				<li>Click en el encabezado precio para ordenar (Ascendente o Descendente)</li>
+			</ol>
+			
+			<table id="tabla" border="1">
+				<thead>
+					<tr><th>ID</th><th>FOTO</th><th  id="price">PRICE</th>
+							<th>TITLE</th><th>DESCRIPTION</th><th>CATEGORY</th></tr>
+				</thead>
+				<tbody id="tbody"></tbody>
+			</table>
+		</form>
+	</div>
+
 </body>
 </html>
