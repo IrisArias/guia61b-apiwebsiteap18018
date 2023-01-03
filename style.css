@@ -1,0 +1,102 @@
+:root{
+	 /* Colores */
+    --Blue: #296073;
+    --Blue-gray: #344A53;
+    --Ligth-blue: #97AFB9;
+    --Ligths:#e0e7ea ;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Sen',sans-serif;
+}
+body{
+	background-color: var(--Ligth-blue);
+}
+header{
+	width: 100%;
+	padding: 30px 0px;
+    text-align: center;
+	background: var(--Blue-gray);
+	color: #fff;
+}
+p{
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	padding: 7px;
+}
+button{
+	padding: 10px;
+	background-color: var(--Blue-gray);
+	color: white;
+	font-weight: bold;
+	padding: 16px;
+	border-radius: 15px;
+}
+button:hover{
+	background-color: var(--Ligths);
+	color: black;
+	cursor:pointer;
+}
+form{
+	padding-left: 30px;
+}
+.selec{
+	background-color: var(--Ligths);
+	padding: 1rem;
+	border-radius: 15px;
+}
+.cheques{
+	padding: 1px 1rem;
+}
+li {
+	font-size: 16px;
+	list-style: none;
+	margin: 5px;
+}
+table {
+	background-color: white;
+	width:85%;
+	margin:2rem auto;
+	align-content: center;
+	text-align: center;
+}
+thead{
+
+}
+th{
+	padding: 20px;;
+}
+th#price 
+{
+	background-color: var(--Ligths);
+	cursor:pointer;
+}
+tbody{
+	padding: 17px;
+}
+img {
+	width:3cm;
+	height:3cm;
+	margin: 0.5cm;
+}
+
+footer{
+	background: var(--Blue-gray);
+	color: #fff;
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+/*si chequea muestra los productos, sin cheque desaparecen los productos*/
+input#c1:checked ~ table tbody tr.c1 { display: table-row; }
+input#c1:not(checked) ~ table tbody tr.c1 { display: none; }
+input#c2:checked ~ table tbody tr.c2 { display: table-row; }
+input#c2:not(checked) ~ table tbody tr.c2 { display: none; }
+input#c3:checked ~ table tbody tr.c3 { display: table-row; }
+input#c3:not(checked) ~ table tbody tr.c3 { display: none; }
+input#c4:checked ~ table tbody tr.c4 { display: table-row; }
+input#c4:not(checked) ~ table tbody tr.c4 { display: none; }
